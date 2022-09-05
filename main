@@ -1,0 +1,8 @@
+set $mode_polybarStart (h)ome, (m)ain
+mode "$mode_polybarStart" {
+bindsym h exec bash .config/polybar/forest/launch1.sh, mode "default">
+bindsym m exec bash .config/polybar/forest/launch.sh, mode "default">
+bindsym Return mode "default"
+bindsym Escape mode "default"
+}
+bindsym $mod+t mode "$mode_polybarStart"
