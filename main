@@ -1,8 +1,16 @@
+### AUTOLOCK CONTROL FROM i3 CONFIG
+### LICENSE BY MR. RED
+
+### Setting mode
 set $mode_polybarStart (h)ome, (m)ain
+
 mode "$mode_polybarStart" {
+### Main section
 bindsym h exec bash .config/polybar/forest/launch1.sh, mode "default">
 bindsym m exec bash .config/polybar/forest/launch.sh, mode "default">
+### Shortcut for default mode
 bindsym Return mode "default"
 bindsym Escape mode "default"
 }
+### Set you'r empty bindsym
 bindsym $mod+t mode "$mode_polybarStart"
